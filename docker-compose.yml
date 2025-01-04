@@ -1,0 +1,35 @@
+services:
+  # NGINX
+  nginx:
+    restart: always
+    container_name: nginx_proxy
+    build:
+      context: ./NGINX
+      dockerfile: Dockerfile_NGINX
+    ports:
+      - "8080:80"
+    volumes:
+      - ./NGINX/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./NGINX/web:/usr/share/nginx/html:ro
+    networks:
+      - smart_cities_network
+    depends_on:
+      - flask_api
+  
+  # Python API
+  flask_api:
+    restart: always
+    container_name: flask_api
+    build:
+      context: ./Flask_API
+      dockerfile: Dockerfile_Flask
+    expose:
+      - "5000"
+    volumes:
+      - ./Flask_API/app:/app
+    networks:
+      - smart_cities_network
+
+networks:
+  smart_cities_network:
+    driver: bridge

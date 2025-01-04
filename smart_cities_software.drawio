@@ -1,0 +1,82 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.1 Chrome/128.0.6613.186 Electron/32.2.6 Safari/537.36" version="25.0.1">
+  <diagram name="Page-1" id="FKac5WE30fIFghjc_WgK">
+    <mxGraphModel dx="880" dy="558" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="62Jn57mrGyI6FyLBudmx-4" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="130" y="160" width="200" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-6" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://1000marcas.net/wp-content/uploads/2021/05/Docker-Logo-2-500x281.png;clipPath=inset(25.74% 0.67% 26.92% 0%);" parent="1" vertex="1">
+          <mxGeometry x="240" y="170.00000000000003" width="80" height="21.476510067114095" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-18" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="170" y="210" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-11" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="62Jn57mrGyI6FyLBudmx-18" vertex="1">
+          <mxGeometry width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-12" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://extassisnetwork.com/tutoriales/wp-content/uploads/Comandos-de-Nginx-que-usted-debe-saber.jpg;clipPath=inset(7.58% 1.67% 8.33% 1%);" parent="62Jn57mrGyI6FyLBudmx-18" vertex="1">
+          <mxGeometry x="13" y="2.1299999999999955" width="94" height="35.73287671232877" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-21" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="170" y="280" width="130" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="rPnjrxC-N22dYR6Ftgcd-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="62Jn57mrGyI6FyLBudmx-21" vertex="1">
+          <mxGeometry x="-10" y="-10" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-17" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="62Jn57mrGyI6FyLBudmx-21" vertex="1">
+          <mxGeometry width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-20" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1024%2F1%2AU3OFfUPCKV7qMmLRRiiYDA.jpeg;clipPath=inset(24.04% 18.67% 31.73% 9.67%);" parent="62Jn57mrGyI6FyLBudmx-21" vertex="1">
+          <mxGeometry x="13.259999999999991" y="10" width="93.48" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-25" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="170" y="350" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-19" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="62Jn57mrGyI6FyLBudmx-25" vertex="1">
+          <mxGeometry width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-15" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://flask-es.readthedocs.io/_images/flask-horizontal.png;" parent="62Jn57mrGyI6FyLBudmx-25" vertex="1">
+          <mxGeometry x="13.5" y="4.949999999999989" width="93" height="30.1" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-26" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="170" y="420" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-22" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="62Jn57mrGyI6FyLBudmx-26" vertex="1">
+          <mxGeometry width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-24" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://sysadm.es/wp-content/uploads/2018/04/psql.png;clipPath=inset(12.32% 0.33% 13.77% 0%);" parent="62Jn57mrGyI6FyLBudmx-26" vertex="1">
+          <mxGeometry x="11.960000000000008" y="3.6100000000000136" width="96.07" height="32.77304347826087" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="62Jn57mrGyI6FyLBudmx-19" target="62Jn57mrGyI6FyLBudmx-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="62Jn57mrGyI6FyLBudmx-11" target="62Jn57mrGyI6FyLBudmx-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="62Jn57mrGyI6FyLBudmx-17" target="62Jn57mrGyI6FyLBudmx-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-36" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="380" y="210" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-34" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="62Jn57mrGyI6FyLBudmx-36" vertex="1">
+          <mxGeometry width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-35" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://miro.medium.com/v2/resize:fit:834/0*nVP5nQ-SCXEuTA8n.png;" parent="62Jn57mrGyI6FyLBudmx-36" vertex="1">
+          <mxGeometry x="16.680000000000007" width="86.65" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="62Jn57mrGyI6FyLBudmx-34" target="62Jn57mrGyI6FyLBudmx-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-40" value="1. Recolección de datos&#xa;1.1 Dispositivos IoT&#xa;1.2 Protocolo de comunicación HTTP" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://novatronicec.com/wp-content/uploads/2021/06/esp32-wroom-wifi-bluetooth.jpg;clipPath=inset(5.81% 10.67% 7.21% 7%);" parent="1" vertex="1">
+          <mxGeometry x="610" y="177" width="140" height="105.9919028340081" as="geometry" />
+        </mxCell>
+        <mxCell id="62Jn57mrGyI6FyLBudmx-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" parent="1" source="62Jn57mrGyI6FyLBudmx-34" target="62Jn57mrGyI6FyLBudmx-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
