@@ -29,7 +29,23 @@ services:
       - ./Flask_API/app:/app
     networks:
       - smart_cities_network
+  
+  # PostgreSQL
+  postgres:
+    image: postgres:15
+    container_name: postgres_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER: ${DATABASE_USER}
+      - POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      - POSTGRES_DB: ${DATABASE_NAME}
+    networks:
+      - smart_cities_network
 
 networks:
   smart_cities_network:
     driver: bridge
+
+volumes:
+  postgres_data:

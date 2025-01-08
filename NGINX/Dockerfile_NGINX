@@ -1,5 +1,5 @@
 # Dockerfile
-FROM nginx:latest
+FROM nginx:1.27.3
 
 # Copiamos un archivo por defecto que se sobrescribirá con el volumen
 COPY ./nginx.conf /etc/nginx/nginx.conf
