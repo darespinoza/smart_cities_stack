@@ -27,19 +27,31 @@ services:
       - "5000"
     volumes:
       - ./Flask_API/app:/app
+    environment:
+      - DATABASE_HOST=${PG_HOST}
+      - DATABASE_USER=${PG_USER}
+      - DATABASE_PASSWORD=${PG_PASSWORD}
+      - DATABASE_NAME=${PG_DB_NAME}
+    depends_on:
+      - postgres_db
     networks:
       - smart_cities_network
   
   # PostgreSQL
-  postgres:
+  postgres_db:
+    restart: always
     image: postgres:15
     container_name: postgres_db
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    expose:
+      - "5432"
+    # ports:
+    #   - "5432:5432"
     environment:
-      - POSTGRES_USER: ${DATABASE_USER}
-      - POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
-      - POSTGRES_DB: ${DATABASE_NAME}
+      - POSTGRES_USER=${PG_USER}
+      - POSTGRES_PASSWORD=${PG_PASSWORD}
+      - POSTGRES_DB=${PG_DB_NAME}
     networks:
       - smart_cities_network
 
