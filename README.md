@@ -29,6 +29,12 @@ Comando curl con tipo de request, header y datos.
 curl -X POST -H "Content-Type: application/json" -d '{}' http://localhost:5000
 ```
 
+Enviando datos
+
+```
+curl -X POST -d "{'node_id': 'nodo_2', 'timestamp': '2025-01-19 22:43:00', 'sensor_id': 'TEMP', 'value': 15}" -H "Content-Type: application/json" http://localhost:8080/api/add_data
+```
+
 # Comandos útiles Docker
 
 Verificar validez de la sintaxis y configuración del archivo `docker-compose.yml`

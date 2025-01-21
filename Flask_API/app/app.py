@@ -49,13 +49,13 @@ def create_table():
 
 
 # Función para insertar datos en la tabla
-def insert_data(name):
+def insert_data(node_id, timestamp,sensor_id, value):
     try:
         connection = get_db_connection()
         cursor = connection.cursor()
 
-        insert_query = "INSERT INTO my_table (name) VALUES (%s) RETURNING id;"
-        cursor.execute(insert_query, (name,))
+        insert_query = "INSERT INTO smart_cties_register (node_id, timestamp_db, sensor_id, value) VALUES (%s, %s, %s, %s) RETURNING id;"
+        cursor.execute(insert_query, (node_id, timestamp, sensor_id, value,))
         connection.commit()
 
         inserted_id = cursor.fetchone()[0]
@@ -103,20 +103,26 @@ def db_check():
         if conn:
             conn.close()
 
-@app.route('/add_data', methods=['POST'])
+@app.route(
+    '/add_data', 
+    methods=['POST']
+)
 def add_data():
     try:
         # Obtener los datos JSON del cuerpo de la solicitud
         data = request.get_json()
 
-        # Validar que se haya proporcionado el campo 'name'
-        if 'name' not in data:
-            return jsonify({"error": "El campo 'name' es obligatorio"}), 400
+        # Validar que se hayan proporcionado campos necesarios
+        if 'node_id' not in data and 'timestamp' not in data and 'sensor_id' not in data and 'value' not in data:
+            return jsonify({"error": "Campos faltantes"}), 400
 
-        name = data['name']
+        node_id = data['node_id']
+        timestamp = data['timestamp']
+        sensor_id = data['sensor_id']
+        value = float(data['value'])
 
         # Insertar los datos en la tabla
-        inserted_id = insert_data(name)
+        inserted_id = insert_data(node_id, timestamp, sensor_id, value)
 
         if inserted_id:
             return jsonify({"message": "Datos insertados correctamente", "id": inserted_id}), 201
