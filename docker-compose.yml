@@ -48,11 +48,25 @@ services:
     # expose:
       # - "5432"
     ports:
-      - "5432:5432"
+      - "5433:5432"
     environment:
       - POSTGRES_USER=${PG_USER}
       - POSTGRES_PASSWORD=${PG_PASSWORD}
       - POSTGRES_DB=${PG_DB_NAME}
+    networks:
+      - smart_cities_network
+
+  # GRAFANA
+  grafana_sc:
+    image: grafana/grafana-oss:11.1.4
+    container_name: grafana_sc
+    restart: always
+    ports:
+      - "3001:3000"
+    volumes:
+      - ./grafana-storage:/var/lib/grafana/
+    depends_on:
+      - postgres_db
     networks:
       - smart_cities_network
 

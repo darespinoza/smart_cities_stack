@@ -18,26 +18,28 @@ def get_db_connection():
     except Exception as e:
         raise
 
-# Función para crear la tabla
+# Función para crear tabla destino en base de datos
 def create_table():
     try:
-        # Establecer la conexión con la base de datos
+        # Establecer la conexion y crear cursor
         conn = get_db_connection()
         cursor = conn.cursor()
+        
         # Crear la tabla
         create_table_query = '''
         CREATE TABLE IF NOT EXISTS smart_cties_register (
             id SERIAL PRIMARY KEY,
             node_id VARCHAR(100),
-            timestamp_db TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             sensor_id VARCHAR(100),
             value NUMERIC
         );
         '''
         cursor.execute(create_table_query)
+        
         # Persistir cambios
         conn.commit()
-        return "Tabla 'my_table' creada correctamente."
+        return "Tabla creada correctamente."
     except Exception as error:
         return f"Error creando la tabla: {error}"
     finally:
@@ -47,28 +49,63 @@ def create_table():
         if conn:
             conn.close()
 
+# Función para crear tabla destino en base de datos
+def create_temp_view():
+    try:
+        # Establecer la conexion y crear cursor
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        
+        # Crear la tabla
+        create_view_query = '''
+        CREATE OR REPLACE VIEW temperatura_diaria AS
+        SELECT DATE_TRUNC('day', scr."timestamp") AS timestamp_day,
+            node_id,
+            avg(value) AS avg_temperatura,
+            max(value) AS max_temperatura,
+            min(value) AS min_temperatura
+        FROM smart_cties_register scr
+        WHERE sensor_id = 'TEMP'
+        GROUP BY node_id, timestamp_day;
+        '''
+        cursor.execute(create_view_query)
+        
+        # Persistir cambios
+        conn.commit()
+        return "Vista creada correctamente."
+    except Exception as error:
+        return f"Error creando la vista: {error}"
+    finally:
+        # Cerrar la conexión y el cursor
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
 
 # Función para insertar datos en la tabla
 def insert_data(node_id, timestamp,sensor_id, value):
     try:
-        connection = get_db_connection()
-        cursor = connection.cursor()
+        # Establecer la conexion y crear cursor
+        conn = get_db_connection()
+        cursor = conn.cursor()
 
-        insert_query = "INSERT INTO smart_cties_register (node_id, timestamp_db, sensor_id, value) VALUES (%s, %s, %s, %s) RETURNING id;"
+        # Preparar query para insertar datos
+        insert_query = "INSERT INTO smart_cties_register (node_id, timestamp, sensor_id, value) VALUES (%s, %s, %s, %s) RETURNING id;"
         cursor.execute(insert_query, (node_id, timestamp, sensor_id, value,))
-        connection.commit()
+        conn.commit()
 
         inserted_id = cursor.fetchone()[0]
         return inserted_id
 
     except Exception as error:
-        print(f"Error insertando datos: {error}")
+        print (f"Error insertando datos: {error}")
         return None
     finally:
+        # Cerrar conexion y cursor
         if cursor:
             cursor.close()
-        if connection:
-            connection.close()
+        if conn:
+            conn.close()
 
 # Ruta GET para senal Time to Live
 @app.route(
@@ -85,7 +122,7 @@ def ttl():
 )
 def db_check():
     try:
-        # Conectarse a la base de datos
+        # Conectarse a base de datos
         conn = get_db_connection()
         # Crear un cursor
         cursor = conn.cursor()
@@ -109,6 +146,11 @@ def db_check():
 )
 def add_data():
     try:
+        # Crear tabla al inicio de la app
+        create_table()
+        # Crear vistas
+        create_temp_view()
+        
         # Obtener los datos JSON del cuerpo de la solicitud
         data = request.get_json()
 
@@ -116,6 +158,7 @@ def add_data():
         if 'node_id' not in data and 'timestamp' not in data and 'sensor_id' not in data and 'value' not in data:
             return jsonify({"error": "Campos faltantes"}), 400
 
+        # Obtener datos 
         node_id = data['node_id']
         timestamp = data['timestamp']
         sensor_id = data['sensor_id']
@@ -124,6 +167,7 @@ def add_data():
         # Insertar los datos en la tabla
         inserted_id = insert_data(node_id, timestamp, sensor_id, value)
 
+        # Verificar si se insertaron datos
         if inserted_id:
             return jsonify({"message": "Datos insertados correctamente", "id": inserted_id}), 201
         else:
