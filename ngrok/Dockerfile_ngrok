@@ -1,0 +1,8 @@
+# Dockerfile
+FROM ngrok/ngrok:3
+
+# Exponer el puerto (opcional, dependiendo del uso)
+# EXPOSE 80
+
+# Establecer el comando predeterminado
+# CMD ["http", "--url=${NGROK_URL}", "80"]

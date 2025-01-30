@@ -1,2 +1,5 @@
 *.bkp
 Flask_API/app/__pycache__/
+ngrok/ngrok.yml
+
+ngrok/env.ngrok

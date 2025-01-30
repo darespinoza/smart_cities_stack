@@ -1,14 +1,14 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.4 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.4">
   <diagram name="Page-1" id="FKac5WE30fIFghjc_WgK">
-    <mxGraphModel dx="819" dy="478" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="989" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="62Jn57mrGyI6FyLBudmx-4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
-          <mxGeometry x="150" y="160" width="310" height="360" as="geometry" />
+          <mxGeometry x="140" y="160" width="330" height="360" as="geometry" />
         </mxCell>
         <mxCell id="62Jn57mrGyI6FyLBudmx-6" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://1000marcas.net/wp-content/uploads/2021/05/Docker-Logo-2-500x281.png;clipPath=inset(25.74% 0.67% 26.92% 0%);" parent="1" vertex="1">
-          <mxGeometry x="270" y="170" width="60" height="16.11" as="geometry" />
+          <mxGeometry x="267.75" y="166.11" width="74.49" height="20" as="geometry" />
         </mxCell>
         <mxCell id="62Jn57mrGyI6FyLBudmx-18" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="170" y="200" width="120" height="40" as="geometry" />
@@ -19,10 +19,10 @@
         <mxCell id="62Jn57mrGyI6FyLBudmx-12" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://extassisnetwork.com/tutoriales/wp-content/uploads/Comandos-de-Nginx-que-usted-debe-saber.jpg;clipPath=inset(7.58% 1.67% 8.33% 1%);" parent="62Jn57mrGyI6FyLBudmx-18" vertex="1">
           <mxGeometry x="13" y="2.1299999999999955" width="94" height="35.73287671232877" as="geometry" />
         </mxCell>
-        <mxCell id="62Jn57mrGyI6FyLBudmx-21" value="" style="group" parent="1" vertex="1" connectable="0">
+        <mxCell id="62Jn57mrGyI6FyLBudmx-21" value="" style="group;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="170" y="280" width="130" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="rPnjrxC-N22dYR6Ftgcd-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;gradientColor=#b3b3b3;" parent="62Jn57mrGyI6FyLBudmx-21" vertex="1">
+        <mxCell id="rPnjrxC-N22dYR6Ftgcd-1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="62Jn57mrGyI6FyLBudmx-21" vertex="1">
           <mxGeometry x="-10" y="-20" width="140" height="150" as="geometry" />
         </mxCell>
         <mxCell id="62Jn57mrGyI6FyLBudmx-17" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="62Jn57mrGyI6FyLBudmx-21" vertex="1">
@@ -64,25 +64,27 @@
         <mxCell id="62Jn57mrGyI6FyLBudmx-34" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="62Jn57mrGyI6FyLBudmx-36" vertex="1">
           <mxGeometry width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="62Jn57mrGyI6FyLBudmx-35" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://miro.medium.com/v2/resize:fit:834/0*nVP5nQ-SCXEuTA8n.png;" parent="62Jn57mrGyI6FyLBudmx-36" vertex="1">
+        <mxCell id="62Jn57mrGyI6FyLBudmx-35" value="Agent" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://miro.medium.com/v2/resize:fit:834/0*nVP5nQ-SCXEuTA8n.png;" parent="62Jn57mrGyI6FyLBudmx-36" vertex="1">
           <mxGeometry x="27.5" y="5" width="64.99" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="62Jn57mrGyI6FyLBudmx-40" target="NOC3WcpC7XQ2FmaN5iOc-13">
+        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="62Jn57mrGyI6FyLBudmx-40" target="NOC3WcpC7XQ2FmaN5iOc-13" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="710" y="215" />
+              <mxPoint x="710" y="211" />
+              <mxPoint x="590" y="211" />
             </Array>
+            <mxPoint x="590" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-16" value="HTTP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="NOC3WcpC7XQ2FmaN5iOc-14">
+        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-16" value="HTTP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NOC3WcpC7XQ2FmaN5iOc-14" vertex="1" connectable="0">
           <mxGeometry x="-0.1758" y="3" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="3" y="20" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="62Jn57mrGyI6FyLBudmx-40" value="1. Recolección de datos&#xa;1.1 Dispositivos IoT&#xa;1.2 Protocolo de comunicación HTTP" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://novatronicec.com/wp-content/uploads/2021/06/esp32-wroom-wifi-bluetooth.jpg;clipPath=inset(5.81% 10.67% 7.21% 7%);" parent="1" vertex="1">
+        <mxCell id="62Jn57mrGyI6FyLBudmx-40" value="IoT Devices&#xa;(Data collect)" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://novatronicec.com/wp-content/uploads/2021/06/esp32-wroom-wifi-bluetooth.jpg;clipPath=inset(5.81% 10.67% 7.21% 7%);fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="640" y="317" width="140" height="105.9919028340081" as="geometry" />
         </mxCell>
-        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="NOC3WcpC7XQ2FmaN5iOc-2" target="62Jn57mrGyI6FyLBudmx-22">
+        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" parent="1" source="NOC3WcpC7XQ2FmaN5iOc-2" target="62Jn57mrGyI6FyLBudmx-22" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="380" y="500" />
@@ -90,19 +92,19 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-9" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-9" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="320" y="430" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-2" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="NOC3WcpC7XQ2FmaN5iOc-9">
+        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-2" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="NOC3WcpC7XQ2FmaN5iOc-9" vertex="1">
           <mxGeometry width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-8" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://kanari.com/hs-fs/hubfs/grafana%20logo.png?width=1204&amp;height=311&amp;name=grafana%20logo.png;" vertex="1" parent="NOC3WcpC7XQ2FmaN5iOc-9">
+        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-8" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://kanari.com/hs-fs/hubfs/grafana%20logo.png?width=1204&amp;height=311&amp;name=grafana%20logo.png;" parent="NOC3WcpC7XQ2FmaN5iOc-9" vertex="1">
           <mxGeometry x="10" y="7.089999999999975" width="100" height="25.83" as="geometry" />
         </mxCell>
-        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-13" value="NGROK Tunnel" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://png.pngtree.com/png-clipart/20190924/original/pngtree-world-wide-web-icon-for-your-project-png-image_4813752.jpg;clipPath=inset(14.33% 14.67% 15% 14.67%);" vertex="1" parent="1">
-          <mxGeometry x="560" y="180" width="70" height="70" as="geometry" />
+        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-13" value="ngrok tunnel" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://png.pngtree.com/png-clipart/20190924/original/pngtree-world-wide-web-icon-for-your-project-png-image_4813752.jpg;clipPath=inset(14.33% 14.67% 15% 14.67%);" parent="1" vertex="1">
+          <mxGeometry x="530" y="186.11" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.379;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="NOC3WcpC7XQ2FmaN5iOc-13" target="62Jn57mrGyI6FyLBudmx-11">
+        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.379;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=classic;startFill=1;" parent="1" source="NOC3WcpC7XQ2FmaN5iOc-13" target="62Jn57mrGyI6FyLBudmx-11" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="460" y="215" />
@@ -110,12 +112,12 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-17" value="HTTP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="NOC3WcpC7XQ2FmaN5iOc-15">
+        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-17" value="HTTP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NOC3WcpC7XQ2FmaN5iOc-15" vertex="1" connectable="0">
           <mxGeometry x="0.2206" y="-1" relative="1" as="geometry">
             <mxPoint x="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.63;exitY=0.993;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="62Jn57mrGyI6FyLBudmx-11" target="62Jn57mrGyI6FyLBudmx-34">
+        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.63;exitY=0.993;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="62Jn57mrGyI6FyLBudmx-11" target="62Jn57mrGyI6FyLBudmx-34" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="246" y="250" />
@@ -123,7 +125,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="NOC3WcpC7XQ2FmaN5iOc-2">
+        <mxCell id="NOC3WcpC7XQ2FmaN5iOc-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="NOC3WcpC7XQ2FmaN5iOc-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="290" y="230" as="targetPoint" />
             <Array as="points">

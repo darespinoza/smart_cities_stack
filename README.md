@@ -42,3 +42,11 @@ Verificar validez de la sintaxis y configuración del archivo `docker-compose.ym
 ```
 docker compose config
 ```
+
+# Comandos útiles bash
+
+Conceder permisos de lectura/escritura/ejecucion a `grafana-storage`
+
+```
+sudo chmod -R 777 grafana-storage/*
+```
