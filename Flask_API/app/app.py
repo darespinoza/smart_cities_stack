@@ -130,7 +130,7 @@ def db_check():
         cursor.execute("SELECT version();")
         results = cursor.fetchone()
         
-        return f"Conectado a PostgreSQL v{results[0]}", 200
+        return f"Conectado a PostgreSQL v{results[0]}\n", 200
     except Exception as e:
         return f"Sin conexion a BD: {e}", 500
     finally:

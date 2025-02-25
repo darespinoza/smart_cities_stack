@@ -7,14 +7,14 @@ services:
       context: ./NGINX
       dockerfile: Dockerfile_NGINX
     ports:
-      - "8080:80"
+      - "8080:8080"
     volumes:
       - ./NGINX/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./NGINX/web:/usr/share/nginx/html:ro
     networks:
       - smart_cities_network
     depends_on:
-      - flask_api
+      - grafana
   
   # Python API
   flask_api:
@@ -45,10 +45,8 @@ services:
     container_name: postgres_db
     volumes:
       - postgres_data:/var/lib/postgresql/data
-    # expose:
-      # - "5432"
-    ports:
-      - "5433:5432"
+    expose:
+      - "5432"
     environment:
       - POSTGRES_USER=${PG_USER}
       - POSTGRES_PASSWORD=${PG_PASSWORD}
@@ -57,12 +55,18 @@ services:
       - smart_cities_network
 
   # GRAFANA
-  grafana_sc:
+  grafana:
     image: grafana/grafana-oss:11.1.4
-    container_name: grafana_sc
+    container_name: grafana
     restart: always
     ports:
       - "3001:3000"
+    # expose:
+    #   - "3000"
+    environment:
+      - TZ=America/Guayaquil
+      - GF_SERVER_ROOT_URL=http://localhost:3001
+      - GF_SERVER_SERVE_FROM_SUB_PATH=true
     volumes:
       - ./grafana-storage:/var/lib/grafana/
     depends_on:
@@ -70,16 +74,16 @@ services:
     networks:
       - smart_cities_network
   
-  # ngrok tunnel
-  ngrok_tunnel:
-    container_name: ngrok_tunnel
+  # ngrok tunnel agent 
+  ngrok_agent:
+    container_name: ngrok_agent
     restart: always
     image: ngrok/ngrok:3
     environment:
       - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
     depends_on:
       - flask_api
-    command: http --url=${NGROK_URL} nginx_proxy:80
+    command: http --url=${NGROK_URL} flask_api:5000
     networks:
       - smart_cities_network
 

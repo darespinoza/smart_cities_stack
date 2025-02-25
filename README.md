@@ -1,6 +1,8 @@
 
 ![Smart Cities stack](smart_cities_software.drawio.png)
 
+# Smart Cities Stack
+
 # NGINX
 ## Web server
 
